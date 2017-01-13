@@ -1,0 +1,16 @@
+﻿<Window x:Class="WindowsApplication.OldView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsApplication"
+        mc:Ignorable="d"
+        Title="Windows Application" Height="500" Width="250" ResizeMode="NoResize">
+
+    <Grid>
+        <TextBox x:Name="HistoryTextBox" AcceptsReturn="True" HorizontalAlignment="Center" Height="425" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="220"/>
+        <TextBox x:Name="MessageTextBox" HorizontalAlignment="Center" Height="25" KeyUp="KeyUpHandler" Margin="0,0,55,10" TextChanged="TextChangedHandler" VerticalAlignment="Bottom" Width="165" FontSize="14.667"/>
+        <Button x:Name="SendButton" Click="ClickHander" Content="Send" HorizontalAlignment="Center" Height="25" IsEnabled="False" Margin="170,0,0,10" VerticalAlignment="Bottom" Width="50"/>
+    </Grid>
+    
+</Window>
